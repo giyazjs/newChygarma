@@ -157,11 +157,7 @@ button:hover {
   margin-right: 50px;
   border-bottom: 3px solid transparent;
 }
-.author__status-texts:hover {
-  border-bottom: 3px solid #000;
-  cursor: pointer;
-  border-radius: 5px;
-}
+
 
 .author__status-text {
   font-style: normal;
@@ -511,4 +507,213 @@ button:hover {
   .social__icons {
     margin-right: 30px;
   }
+}
+
+
+@media screen and (max-width: 320px) {
+  /* iPhone SE/5 ---- одаптивка */
+
+    /* __________________header__________________________ */
+
+
+  .items {
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+
+  .logo__img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo__img-main {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sign {
+    display: none;  
+  }    
+  
+    /* __________________________________________________ */
+
+
+
+    .author__status-title {
+      margin-left: 0;
+      padding: 22px 5px;
+    }
+
+    .author__name {
+      font-size: 24px;
+    }
+
+    .author__circle { 
+      width: 80px;
+      height: 80px;
+    }
+
+    .author__bg {
+      height: 127px;
+    }
+    .author__circle {
+      top: 18%;
+    }
+
+    .author__status-texts:last-child {
+      margin-right: 0;
+    }
+  
+    .author__status-texts {
+      margin-right: 30px;
+    }
+  
+    .author__status-text, .author__status-quantity {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .author__btn-name {
+      display: none;
+    }
+
+    .creation  {
+      margin-top: 20px;
+      padding: 0 12px;
+    }
+
+    .creation__h1 {
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .creation__strings {
+      margin-top: 30px;
+    }
+
+    .creation__string-names {
+      max-width: 295px;
+      width: 100%;
+      height: 65px;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      padding:10px;
+    }
+
+    .creation__inp {
+      max-width: 259px;
+      width: 100%;
+      height: 35px;
+      border: 1px solid #000000;
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    
+
+    .creation__serch-badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 36px;
+      width: 100%;
+      height: 35px;
+      border: 1px solid #000;
+    }
+    .search__badge {
+      width: 20px;
+      height: 22px;
+    }
+
+    .creation__string-grey, .creation__string-white  {
+      max-width: 295px;
+      width: 100%;
+      height: 43px;
+    }
+
+    .creation__string-title {
+      font-size: 14px;
+      line-height: 8px;
+    }
+
+    .creation__name-data, .creation__string-name {
+      font-size: 10px;
+      line-height: 20px;
+
+    }
+
+    .creation__circles {
+      margin-top: 20px;
+    }
+
+    .creation__circle-big {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+
+    }
+
+    .creation__circle {
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+    }
+
+    .creation__arrow {
+      margin-top: 10px;
+    }
+
+    .arrow {
+      width: 38px;
+      height: 42px;
+    }
+
+    .arrow__right  {
+      margin-left: 20px;
+    }
+
+    /* ____________________________footer____________________________ */
+
+  .footer {
+    margin-top: 70px;
+  }
+
+
+  .footer__links {
+    padding: 0 12px;
+  }
+  .footer__link-a {
+    margin-bottom: 6px;
+    line-height: 12px;
+    font-size: 10px;
+  }
+
+  .socials {
+    margin-top: 35px;
+    padding: 0 12px;
+    align-items: flex-end;
+  }
+  .social__link {
+    font-size: 12px;
+    width: 100%;
+    line-height: 16px;
+  }
+
+  .social__icons {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+
+  .social__icon-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+  }
+
+
+
+
 }

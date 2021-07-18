@@ -150,7 +150,6 @@ button:hover {
 .popular__img {
   width: 285px;
   height: 270px;
-  border: 3px solid #000000;
   border-radius: 33px;
 }
 
@@ -163,6 +162,10 @@ button:hover {
   transition: all 0.5s;
 }
 
+.popular__box:hover {
+  transform: rotate(-6.02deg);
+}
+
 .popular__name {
   display: flex;
   align-items: center;
@@ -172,9 +175,9 @@ button:hover {
   margin-top: 100px;
 }
 
-.popular__box-deg {
+/* .popular__box-deg {
   transform: rotate(-6.02deg);
-}
+} */
 
 .popular__links {
   margin-top: 20px;
@@ -570,5 +573,268 @@ button:hover {
   .social__icons {
     margin-right: 30px;
   }
+
+
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+  /* iPhone SE/5 ---- одаптивка */
+
+    /* __________________header__________________________ */
+  .items {
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+
+  .logo__img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo__img-main {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sign {
+    display: none;  
+  }    
+  
+    /* __________________________________________________ */
+
+  .author__text-title {
+    font-size: 24px;
+  }
+
+  .author__text-title {
+    font-size: 24px;
+    top: 23%;
+    left: 35%;
+  }
+
+  .popular {
+    padding: 0 12px;
+  }
+
+  .popular__title-text {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .popular__boxs {
+    margin-left: 0;
+  }
+
+  .popular__img {
+    max-width: 148px;
+    width: 100%;
+    height: 142px;
+    border-radius: 10px;
+  }
+
+  .populars__blocks {
+    flex-direction: column;
+  }
+
+  .popular__box-user, .popular__box {
+  border: 1px solid #000;
+  max-width: 139px;
+  width: 100%;
+  height: 143px;  
+  border-radius: 10px;
+  }
+
+  .popular__box-user {
+    border: none;
+  }
+
+  .about__author {
+    top: 46%;
+    left: 14px;
+}
+
+  .name__users {
+    font-size: 18px;
+  }
+
+  .about__users {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .popular__title {
+    margin-top: 28px;
+    margin-bottom: 18px;
+  }
+
+  .popular__name {
+    font-size: 12px;
+    margin-top: 50px;
+  }
+
+  .popular__symbol {
+    padding: 0 12px;
+    margin-top: 30px;
+  }
+
+  .popular__link-none {
+    display: flex;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .popular__allauthor {
+    margin-left: 0;
+    font-size: 14px;
+    right: 10%;
+  }
+
+  .popular__circles {
+    display: none;
+    top: 20%;
+  } 
+
+  .popular__circle-big {
+    width: 17px;
+    height: 17px;
+  }
+
+  .popular__circle {
+    width: 8px;
+    height: 8px;
+    margin-left: 6px;
+  } 
+
+  .all__symbols-arrows {
+    margin-top: 0;
+  }
+
+  .popular__arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .arrow {
+    width: 38px;
+    height: 42px;
+  }
+
+  .all {
+    margin-top: 60px;
+    padding: 0 12px;
+  }
+
+  .all__title {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .all__input {
+  max-width: 259.67px;
+  width: 100%;
+  height: 35px;
+  margin-left: 0;
+  padding: 10px;
+  font-size: 10px;
+  }
+
+  .all__search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 35px;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 22px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  
+
+  .all__block, .all__block-grey, .all__block-white {
+  max-width: 295px;
+  width: 100%;
+  height: 43px;
+  border-radius: 10px;
+  margin-left: 0;
+  background: #f5e2cf;
+  border: 1px solid #000000;
+  padding: 7px;
+  }
+
+  .all__block {
+    height: 64px;
+  }
+
+  .all__block-text, .all__block-name {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .all__block-name {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .all__block-p {
+    font-size: 10px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+
+  /* ____________________________footer____________________________ */
+
+  .footer {
+    margin-top: 70px;
+  }
+
+
+  .footer__links {
+    padding: 0 12px;
+  }
+  .footer__link-a {
+    margin-bottom: 6px;
+    line-height: 12px;
+    font-size: 10px;
+  }
+
+  .socials {
+    margin-top: 35px;
+    padding: 0 12px;
+    align-items: flex-end;
+  }
+  .social__link {
+    font-size: 12px;
+    width: 100%;
+    line-height: 16px;
+  }
+
+  .social__icons {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+
+  .social__icon-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+  }
+
+
+
+
+
 
 }

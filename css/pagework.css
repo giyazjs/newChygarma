@@ -33,7 +33,7 @@ a {
 }
 
 button {
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 a:hover {
@@ -44,7 +44,7 @@ a:active {
   color: #41311b;
 }
 button:hover {
-  background-color: #F6B758;
+  background-color: #f6b758;
 }
 
 .burger__menu {
@@ -144,6 +144,18 @@ pre {
 .poem__block-p {
   margin-top: 35%;
   margin-left: 30%;
+}
+
+.poem__like-icon,
+.poem__like-img {
+  width: 53px;
+  height: 49px;
+}
+
+.poem__like-icon:active {
+  width: 53px;
+  height: 49px;
+  opacity: 0.5;
 }
 
 .poem__like {
@@ -249,7 +261,6 @@ pre {
   background-repeat: no-repeat;
   transform: rotate(180deg);
   cursor: pointer;
-
 }
 .slick-next {
   width: 60px;
@@ -349,8 +360,9 @@ pre {
   margin-right: 0;
 }
 
-
-
+.slick-arrow:hover {
+  background-color:white ;
+}
 
 @media screen and (max-width: 769px) {
   /* стили планшет - ipad Mini*/
@@ -393,6 +405,9 @@ pre {
     flex-direction: column-reverse;
     display: flex;
   }
+  .poem__texts {
+    padding: -30px;
+  }
 
   .poem__text-title {
     display: flex;
@@ -434,7 +449,7 @@ pre {
     max-width: 200px;
     width: 100%;
     height: 58px;
-    font-size: 18px
+    font-size: 18px;
   }
 
   .slick-prev {
@@ -444,16 +459,7 @@ pre {
     right: 39%;
   }
 
-
-
-
-
-
-
   /* ____________________________________footer_________________________________________ */
-
-
-
 
   .footer__link {
     max-width: 264px;
@@ -474,8 +480,195 @@ pre {
     margin-right: 30px;
   }
 
-
-
-
   /* _____________________________________________________________________________ */
+}
+
+@media screen and (max-width: 320px) {
+  /* iPhone SE/5 ---- одаптивка */
+
+  /* __________________header__________________________ */
+  .items {
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+
+  .logo__img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo__img-main {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sign {
+    display: none;
+  }
+
+  /* __________________________________________________ */
+
+  .section {
+    padding: 0 12px;
+  }
+
+  .title__text {
+    margin-top: 17px;
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .title__span {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .poem__text-title {
+    font-size: 14px;
+  }
+
+  .poem__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 296px;
+    width: 100%;
+    height: 243px;
+    margin-left: 0;
+  }
+
+  .poem__block-p {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .poem {
+    margin-top: 20px;
+  }
+
+  .poem__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .poem__like {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .poem__like-icon,
+  .poem__like-img {
+    width: 35px;
+    height: 30px;
+  }
+
+  .poem__like-quantity {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .poem__like-icon:active {
+    width: 35px;
+    height: 30px;
+  }
+
+  .poem__texts {
+    padding: 0;
+  }
+
+  .comments {
+    padding: 0 12px;
+    margin-top: 60px;
+  }
+
+  .comments__title-h2 {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .comments__title-inp {
+    max-width: 260px;
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 8px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .comments__title-btn {
+    margin-left: 0;
+    font-size: 14px;
+    max-width: 131px;
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+  }
+
+  .comments__block {
+    padding: 10px;
+    max-width: 148px;
+    width: 100%;
+    height: 137px;
+  }
+
+  .commets__block-p,
+  .comments__block-span {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .slick-prev {
+    left: 26%;
+  }
+  .slick-next {
+    right: 26%;
+  }
+
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+   /* ____________________________footer____________________________ */
+
+   .footer {
+    margin-top: 70px;
+  }
+
+
+  .footer__links {
+    padding: 0 12px;
+  }
+  .footer__link-a {
+    margin-bottom: 6px;
+    line-height: 12px;
+    font-size: 10px;
+  }
+
+  .socials {
+    margin-top: 35px;
+    padding: 0 12px;
+    align-items: flex-end;
+  }
+  .social__link {
+    font-size: 12px;
+    width: 100%;
+    line-height: 16px;
+  }
+
+  .social__icons {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+
+  .social__icon-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+  }
 }
