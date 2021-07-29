@@ -17,8 +17,22 @@
     <header class="header">
       <nav class="nav">
         <div class="container">
+          <div class="burger_menu ">
+            <div class="burger_content">
+                <div class="burger_buttons">
+                    <a href="#" class="login_btn-burger">Вход > </a>
+                    <a href="#" class="registr_btn-burger">Регистрация > </a>
+                </div>
+                <a href="#" class="burger_link">Главная</a>
+                <a href="#" class="burger_link">Авторы</a>
+                <a href="#" class="burger_link">Произведения</a>
+                <a href="#" class="burger_link">Новости</a>
+            </div>
+            <div class="burger_bg burger_close"></div>
+        </div>
           <div class="items">
             <a href="" class="logo__img"> 
+              <img src="./images/logo_white.svg" alt="" class="logo__img-main logo-white">
               <img class="logo__img-main" src="./images/logo.svg" alt="logo">
             </a>
             <a href="" class="link">Главная</a>
@@ -29,28 +43,19 @@
               <button class="signup">Вход ></button>
               <button class="checkin">Регистрация ></button>
             </div>
-
-            <!-- <div class="burger_menu ">
-              <div class="burger_content">
-                  <div class="burger_buttons">
-                      <a href="authorization.html" class="login_btn-burger">Вход <img src="img/Arrow.svg" alt=""></a>
-                      <a href="registration.html" class="registr_btn-burger">Регистрация </a>
-                  </div>
-                  <a href="#" class="burger_link">Главная</a>
-                  <a href="#" class="burger_link">Авторы</a>
-                  <a href="#" class="burger_link">Произведения</a>
-                  <a href="#" class="burger_link">Новости</a>
-              </div>
-              <div class="burger_bg burger_close"></div>
-          </div> -->
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line burger__line-center "></div>
+              <div class="burger__line"></div>
+          </div>
           </div>
         </div>
       </nav>
       <div class="bg__author">
-        <div class="bg__author-img">
-          <img class="bg__img" src="./images/works__bg.svg" alt="">
+        <div class="bg__author-img" >
+          <span class="author__text-title">Произведения</span>
         </div>
-        <span class="author__text-title">Авторы</span>
+        
       </div>
     </header>
     <section class="section">
@@ -171,5 +176,8 @@
           </div>
       </div>
   </footer>
+
+
+  <script src="./burger.js"></script>
   </body>
 </html>

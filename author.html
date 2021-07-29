@@ -17,8 +17,22 @@
     <header class="header">
       <nav class="nav">
         <div class="container">
+          <div class="burger_menu ">
+            <div class="burger_content">
+                <div class="burger_buttons">
+                    <a href="#" class="login_btn-burger">Вход > </a>
+                    <a href="#" class="registr_btn-burger">Регистрация > </a>
+                </div>
+                <a href="#" class="burger_link">Главная</a>
+                <a href="#" class="burger_link">Авторы</a>
+                <a href="#" class="burger_link">Произведения</a>
+                <a href="#" class="burger_link">Новости</a>
+            </div>
+            <div class="burger_bg burger_close"></div>
+        </div>
           <div class="items">
             <div class="logo__img"> 
+              <img src="./images/logo_white.svg" alt="" class="logo__img-main logo-white">
               <img class="logo__img-main" src="./images/logo.svg" alt="logo">
             </div>
             <a href="" class="link">Главная</a>
@@ -29,15 +43,19 @@
               <button class="signup">Вход ></button>
               <button class="checkin">Регистрация ></button>
             </div>
-            <!-- Burger Menu -->
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line burger__line-center "></div>
+              <div class="burger__line"></div>
+          </div>
           </div>
         </div>
       </nav>
       <div class="bg__author">
         <div class="bg__author-img">
-          <img class="bg__img" src="./images/author__bg-author.svg" alt="">
+          <span class="author__text-title">Авторы</span>
         </div>
-        <span class="author__text-title">Авторы</span>
+        
       </div>
       <div class="container"></div>
     </header>
@@ -50,7 +68,7 @@
           <div class="populars__blocks">
             <div class="populars__block">
               <div class="popular__boxs">
-                <div class="popular__box popular__box-user">
+                <a href="./visitor.html" class="popular__box popular__box-user">
                   <img
                     class="popular__img"
                     src="/images/popular__box.svg"
@@ -62,17 +80,17 @@
                       лирика, трагедия, стихи на платформе с 02.07.2021
                     </p>
                   </div>
-                </div>
-                <div class="popular__box">
+                </a>
+                <a href="./visitor.html" class="popular__box">
                   <span class="popular__name"
                     >Затемненное фото профиля на фоне</span
                   >
-                </div>
-                <div class="popular__box"></div>
+                </a>
+                <a href="./visitor.html" class="popular__box"></a>
               
-                <div class="popular__box"></div>
-                <div class="popular__box popular__box-deg"></div>
-                <div class="popular__box"></div>
+                <a href="./visitor.html" class="popular__box"></a>
+                <a href="./visitor.html" class="popular__box popular__box-deg"></a>
+                <a href="./visitor.html" class="popular__box"></a>
               </div>
              
               <div class="popular__links">
@@ -166,13 +184,13 @@
                   <a href="#" class="footer__link-a">Все произведения </a>
                   <a href="#" class="footer__link-a">Поделиться произведением</a>
               </div>
-              <div class="footer__link">
+              <div class="footer__link footer__link-btm">
                   <a href="#" class="footer__link-a">Новости</a>
                   <a href="#" class="footer__link-a">Статистика</a>
                   <a href="#" class="footer__link-a">Выбор редакции</a>
                   <a href="#" class="footer__link-a">История кыргызкой литературы</a>
               </div>
-              <div class="footer__link">
+              <div class="footer__link footer__link-btm">
                   <a href="#" class="footer__link-a">О нас</a>
                   <a href="#" class="footer__link-a">Войти</a>
                   <a href="#" class="footer__link-a">Зарегистрироваться</a>
@@ -191,6 +209,6 @@
       </div>
   </footer>
 
-  
-  </body>
+    <script src="./burger.js"></script>
+    </body>
 </html>

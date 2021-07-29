@@ -18,9 +18,23 @@
     <header class="header">
       <nav class="nav">
         <div class="container">
+          <div class="burger_menu ">
+            <div class="burger_content">
+                <div class="burger_buttons">
+                    <a href="#" class="login_btn-burger">Вход > </a>
+                    <a href="#" class="registr_btn-burger">Регистрация > </a>
+                </div>
+                <a href="#" class="burger_link">Главная</a>
+                <a href="#" class="burger_link">Авторы</a>
+                <a href="#" class="burger_link">Произведения</a>
+                <a href="#" class="burger_link">Новости</a>
+            </div>
+            <div class="burger_bg burger_close"></div>
+        </div>
           <div class="items">
             <div class="logo__img"> 
               <img class="logo__img-main" src="./images/logo.svg" alt="logo">
+              <img src="./images/logo_white.svg" alt="" class="logo__img-main logo-white">
             </div>
             <a href="" class="link">Главная</a>
             <a href="./author.html" class="link">Авторы</a>
@@ -30,15 +44,18 @@
               <button class="signup">Вход ></button>
               <button class="checkin">Регистрация ></button>
             </div>
-            <!-- Burger Menu -->
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line burger__line-center "></div>
+              <div class="burger__line"></div>
+          </div>
           </div>
         </div>
       </nav>
-      <div class="container"></div>
       <div class="author__bg">
         <div class="author__bg-all">
         <h1 class="author__name">саякбай каралаев</h1>
-        <button class="author__btn-name">Читать</button>
+        <a href="./pagework.html" class="author__btn-name">Читать</a>
       </div>
       </div>
       <div class="author__status">
@@ -56,10 +73,10 @@
           </div>
           <div class="author__status-texts">
             <p class="author__status-text">читатели</p>
-            <span class="author__status-quantity">427 895</span>
+            <span class="author__status-quantity">4895</span>
           </div>
         </div>
-        <button class="author__status-btn">Читать</button>
+        <a href="./pagework.html" class="author__status-btn">Читать</a>
       </div>
     </header>
     <section class="creation container">
@@ -152,5 +169,7 @@
           </div>
       </div>
   </footer>
+
+  <script src="./burger.js"></script>
   </body>
 </html>

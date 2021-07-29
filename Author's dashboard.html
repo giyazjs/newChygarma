@@ -17,8 +17,22 @@
     <header class="header">
       <nav class="nav">
         <div class="container">
+          <div class="burger_menu ">
+            <div class="burger_content">
+                <div class="burger_buttons">
+                    <a href="#" class="login_btn-burger">Вход > </a>
+                    <a href="#" class="registr_btn-burger">Регистрация > </a>
+                </div>
+                <a href="#" class="burger_link">Главная</a>
+                <a href="#" class="burger_link">Авторы</a>
+                <a href="#" class="burger_link">Произведения</a>
+                <a href="#" class="burger_link">Новости</a>
+            </div>
+            <div class="burger_bg burger_close"></div>
+        </div>
           <div class="items">
             <div class="logo__img">
+              <img src="./images/logo_white.svg" alt="" class="logo__img-main logo-white">
               <img class="logo__img-main" src="./images/logo.svg" alt="logo" />
             </div>
             <a href="" class="link">Главная</a>
@@ -29,11 +43,15 @@
               <button class="signup btnup">Вход ></button>
               <button class="checkin btnup">Регистрация ></button>
             </div>
-
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line burger__line-center "></div>
+              <div class="burger__line"></div>
+          </div>
           </div>
         </div>
       </nav>
-      <div class="header__bg-photo">
+      <div id="bg-avatar" class="header__bg-photo">
         <div class="container">
           <div class="items__user">
             <div class="items__texts">
@@ -41,26 +59,41 @@
                 Загрузите фоновое <br />
                 изображение
               </p>
-              <button class="item__btn">Выбрать</button>
+              <input type="file" name="file" id="input__filed" class="input input__file-bg">
+                <label for="input__filed">
+                <span class="input__file-button-text">Выбрать</span>
+                </label>
             </div>
-            <a href="#" class="btn__link">
-              <img class="btn__photo" src="./images/photo-user.svg" alt="Choose photo">
-            </a>
+            <div class="inp-bg-btn inp-circle-file">
+              <input type="file" name="file" id="input__file" class="input input__file">
+              <label for="input__file">
+                <span class="input__file-button-text">
+                   <img class="btn__photo" src="./images/photo-user.svg" alt="Choose photo">
+                </span>
+              </label>
+            </div>
             <div class="items__name">
               <span class="item__name">саякбай каралаев</span>
             </div>
           </div>
-          <div class="items__circle">
-            <a href="#" class="btn__link btn__link-photo">
-              <img class="btn__photo" src="./images/photo-user.svg" alt="Choose photo">
-            </a>
+          <div id="avatar" class="items__circle">
+            <div class="inp-circle-file">
+                <input type="file" name="file" id="input__file" class="input input__file">
+                <label for="input__file">
+                  <span class="inp-avatar input__file-button-text">
+                     <img class="btn__photo" src="./images/photo-user.svg" alt="Choose photo">
+                  </span>
+                </label>
+              </div>
             <div class="items__user">
               <div class="items__texts user__photo">
                 <p class="items__text items__ucer-text">
                   Загрузите изображение
                 </p>
-                <button class="item__btn">Выбрать</button>
-
+                <input type="file" name="file" id="input__file" class="input-12 input__file">
+                <label for="input__file">
+                <span class="input__file-button-text">Выбрать</span>
+                </label>
               </div>
             </div>
           </div>
@@ -137,33 +170,38 @@
       <div class="publish__blocks">
         <div class="publish__block-big">
           <p class="block__text">Произведение</p>
-          <div class="block__in-big"></div>
+          <textarea class="block__in-big"></textarea>
         </div>
+        <div class="publish__btm-o">
         <div class="publish__block">
           <div class="publish__block-in">
+            <p class="block__in-none-text">Названия</p>
+            <textarea class="block__in-none"></textarea>
+            </div>
+          <div class="publish__block-in">
           <p class="block__text">Иллюстрация</p>
-          <div class="block__in">
+          <div id="com-bg" class="block__in">
             <div class="items__texts block__items-texts">
               <p class="items__text items__ucer-text">
                 Загрузите изображение
               </p>
-              <button class="item__btn">Выбрать</button>
+              <input type="file" name="file" id="input__file" class="input input__file-com">
+                <label for="input__file">
+                <span class="input__file-button-text">Выбрать</span>
+                </label>
             </div>
           </div>
         </div>
-        <div class="publish__block-in">
-          <p class="block__in-none-text">Произведение</p>
-          <div class="block__in-none"></div>
-          </div>
+       
         </div>
         <div class="publish__block block__in-bottom">
           <div class="publish__block-min">
           <p class="block__text">Описание</p>
-          <div class="block__in"></div>
+          <textarea class="block__in block-in"></textarea>
         </div>
         <div class="publish__block-min">
           <p class="block__text block__text-bottom">Хештеги</p>
-          <div class="block__in block__in-end"></div>
+          <textarea class="block__in block__in-end"></textarea>
           <p class="block__text block__text-bottom">Жанр</p>
           <select class="block__select" name="" id="">
             <option>Художественное</option>
@@ -173,6 +211,7 @@
           <button class="item__btn block__btn">опубликовать</button>
         </div>
       </div>
+    </div>
       </div>
     </section>
     <footer class="footer">
@@ -190,13 +229,13 @@
                   <a href="#" class="footer__link-a">Все произведения </a>
                   <a href="#" class="footer__link-a">Поделиться произведением</a>
               </div>
-              <div class="footer__link">
+              <div class="footer__link footer__link-btm">
                   <a href="#" class="footer__link-a">Новости</a>
                   <a href="#" class="footer__link-a">Статистика</a>
                   <a href="#" class="footer__link-a">Выбор редакции</a>
                   <a href="#" class="footer__link-a">История кыргызкой литературы</a>
               </div>
-              <div class="footer__link">
+              <div class="footer__link footer__link-btm">
                   <a href="#" class="footer__link-a">О нас</a>
                   <a href="#" class="footer__link-a">Войти</a>
                   <a href="#" class="footer__link-a">Зарегистрироваться</a>
@@ -214,5 +253,12 @@
           </div>
       </div>
   </footer>
+
+
+
+
+
+  <script src="./burger.js"></script>
+  <script src="./file.js"></script>
   </body>
 </html>
