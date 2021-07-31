@@ -212,6 +212,7 @@ button:hover {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap
 }
 
 .poem__text-title {
@@ -226,6 +227,7 @@ pre {
 }
 
 .poem__text {
+  width: 30%;
   font-family: Roboto;
   font-weight: normal;
   font-size: 24px;
