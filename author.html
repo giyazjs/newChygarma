@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Author</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,9 +67,9 @@
             <h1 class="popular__title-text">Популярные авторы</h1>
           </div>
           <div class="populars__blocks">
-            <div class="populars__block">
+            <div class="populars__slider">
               <div class="popular__boxs">
-                <a href="./visitor.html" class="popular__box popular__box-user">
+                <div class="popular__box popular__box-user">
                   <img
                     class="popular__img"
                     src="/images/popular__box.svg"
@@ -80,42 +81,37 @@
                       лирика, трагедия, стихи на платформе с 02.07.2021
                     </p>
                   </div>
-                </a>
-                <a href="./visitor.html" class="popular__box">
+                </div>
+                <div class="popular__box">
                   <span class="popular__name"
                     >Затемненное фото профиля на фоне</span
                   >
-                </a>
-                <a href="./visitor.html" class="popular__box"></a>
-              
-                <a href="./visitor.html" class="popular__box"></a>
-                <a href="./visitor.html" class="popular__box popular__box-deg"></a>
-                <a href="./visitor.html" class="popular__box"></a>
+                </div>
+                <div class="popular__box"></div>
               </div>
-             
-              <div class="popular__links">
-                <a href="#" class="popular__link">Стать автором</a>
+              <div class="popular__boxs">
+                <div class="popular__box popular__box-user">
+                </div>
+                <div class="popular__box">
+                </div>
+                <div class="popular__box"></div>
+              </div>
+              <div class="popular__boxs">
+                <div class="popular__box popular__box-user"></div>
+                <div class="popular__box">
+                </div>
+                <div class="popular__box"></div>
+              </div>
+              <div class="popular__boxs">
+                <div class="popular__box popular__box-user"></div>
+                <div class="popular__box">
+                </div>
+                <div class="popular__box"></div>
               </div>
             </div>
             <div class="popular__symbol">
                 <a href="#" class="popular__link popular__link-none">Стать автором</a>
                 <a href="#" class="popular__allauthor">Все авторы</a>
-                <div class="popular__arrows">
-                    <div class="popular__arrow">
-                        <img class="arrow" src="./images/arrow.png" alt="">
-                    </div>
-                    <div class="popular__arrow">
-                        <img class="arrow arrow__deg" src="./images/arrow.png" alt="">
-                    </div>
-                </div>
-                <div class="popular__circles">
-                    <div class="popular__circle-big"></div>
-                    <div class="popular__circle"></div>
-                    <div class="popular__circle"></div>
-                    <div class="popular__circle"></div>
-                    <div class="popular__circle"></div>
-                    <div class="popular__circle"></div>
-                </div>
             </div>
           </div>
         </div>
@@ -132,6 +128,7 @@
                     </div>
                 </div>
                 <div class="all__content">
+                  <div class="slick-block">
                     <div class="all__blocks">
                         <div class="all__block">
                             <p class="all__block-text">Автор</p>
@@ -147,24 +144,67 @@
                         <div class="all__block-grey"></div>
 
                     </div>
-                    <div class="all__symblos">
-                        <div class="all__symbols-arrows">
-                            <div class="all-arrow">
-                                <img class="arrow" src="./images/arrow.png" alt="">
-                            </div>
-                            <div class="all-arrow">
-                                <img class="arrow arrow__deg" src="./images/arrow.png" alt="">
-                            </div>
-                        </div>
-                        <div class="popular__circles">
-                            <div class="popular__circle-big"></div>
-                            <div class="popular__circle"></div>
-                            <div class="popular__circle"></div>
-                            <div class="popular__circle"></div>
-                            <div class="popular__circle"></div>
-                            <div class="popular__circle"></div>
-                        </div>
+                    <div class="all__blocks">
+                      <div class="all__block">
+                          <p class="all__block-text">Автор</p>
+                          <p class="all__block-p">Жанр и дата публикации</p>
+                          <span class="all__block-name">Саякбай каралаев</span>
+                      </div>
+                      <div class="all__block-grey"></div>
+                      <div class="all__block-white"></div>
+                      <div class="all__block-grey"></div>
+                      <div class="all__block-white"></div>
+                      <div class="all__block-grey"></div>
+                      <div class="all__block-white"></div>
+                      <div class="all__block-grey"></div>
+
+                  </div>
+                  <div class="all__blocks">
+                    <div class="all__block">
+                        <p class="all__block-text">Автор</p>
+                        <p class="all__block-p">Жанр и дата публикации</p>
+                        <span class="all__block-name">Саякбай каралаев</span>
                     </div>
+                    <div class="all__block-grey"></div>
+                    <div class="all__block-white"></div>
+                    <div class="all__block-grey"></div>
+                    <div class="all__block-white"></div>
+                    <div class="all__block-grey"></div>
+                    <div class="all__block-white"></div>
+                    <div class="all__block-grey"></div>
+
+                </div>
+                <div class="all__blocks">
+                  <div class="all__block">
+                      <p class="all__block-text">Автор</p>
+                      <p class="all__block-p">Жанр и дата публикации</p>
+                      <span class="all__block-name">Саякбай каралаев</span>
+                  </div>
+                  <div class="all__block-grey"></div>
+                  <div class="all__block-white"></div>
+                  <div class="all__block-grey"></div>
+                  <div class="all__block-white"></div>
+                  <div class="all__block-grey"></div>
+                  <div class="all__block-white"></div>
+                  <div class="all__block-grey"></div>
+
+              </div>
+              <div class="all__blocks">
+                <div class="all__block">
+                    <p class="all__block-text">Автор</p>
+                    <p class="all__block-p">Жанр и дата публикации</p>
+                    <span class="all__block-name">Саякбай каралаев</span>
+                </div>
+                <div class="all__block-grey"></div>
+                <div class="all__block-white"></div>
+                <div class="all__block-grey"></div>
+                <div class="all__block-white"></div>
+                <div class="all__block-grey"></div>
+                <div class="all__block-white"></div>
+                <div class="all__block-grey"></div>
+
+            </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -209,6 +249,10 @@
       </div>
   </footer>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./main.js"></script>
     <script src="./burger.js"></script>
     </body>
 </html>

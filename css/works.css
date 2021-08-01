@@ -461,6 +461,37 @@ button:hover {
   margin-right: 0;
 }
 
+.slick-arrow {
+  content: none;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  background-image: url(/images/right-arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -80px;
+  cursor: pointer;
+}
+
+.slick-arrow:hover {
+  background-color: transparent;
+}
+
+.slick-prev {
+  width: 80px;
+  height: 80px;
+  left: 34%;
+  z-index: 2;
+  transform: rotate(180deg);
+}
+
+.slick-next {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 34%;
+}
+
 @media screen and (max-width: 1200px) {
   .nav {
     padding: 0 20px;
@@ -671,6 +702,18 @@ button:hover {
     margin-right: 14px;
   }
 
+  .slick-next {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 34%;
+  }
+
+  .slick-prev {
+    width: 70px;
+    height: 70px;
+  }
+
   /* _________________________________________________________________________ */
 }
 
@@ -755,6 +798,19 @@ button:hover {
 
   .socials {
     margin-top: 50px;
+  }
+
+  .slick-next {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    right: 25%;
+  }
+
+  .slick-prev {
+    width: 55px;
+    height: 55px;
+    left: 25%;
   }
 }
 
@@ -925,10 +981,20 @@ button:hover {
     margin-left: 0;
   }
 
-  .arrow {
-    width: 38px;
-    height: 42px;
+  .slick-next {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    right: 25%;
   }
+
+  .slick-prev {
+    width: 55px;
+    height: 55px;
+    left: 25%;
+  }
+
+
 
   /* ____________________________footer____________________________ */
 
@@ -970,116 +1036,3 @@ button:hover {
   }
 }
 
-/* @media (max-width: 576px) {
-  .registr_btn-burger,
-  .login_btn-burger {
-    display: flex;
-  }
-  .burger_menu {
-    top: 70px;
-    max-width: 255px;
-  }
-  .burger_content {
-    max-width: 255px;
-    padding-left: 20px;
-    padding-top: 12px;
-  }
-  .burger_link {
-    font-size: 18px;
-  }
-}
-
-.burger_menu {
-  position: fixed;
-  right: -1000px;
-  top: 100px;
-  max-width: 343px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.4s;
-  z-index: -1;
-}
-.burger_active {
-  right: 0;
-  opacity: 1;
-  z-index: 1;
-}
-.burger_content {
-  max-width: 343px;
-  width: 100%;
-  background: #f5e2cf;
-  height: 249px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-left: 36px;
-  position: relative;
-}
-.burger_link {
-  text-decoration: none;
-  color: #000000;
-  font-size: 24px;
-  /* padding: 20px 0; 
-  transition: all 0.3s;
-  margin-bottom: 20px;
-}
-.burger_link:hover {
-  background: rgba(221, 171, 95, 1);
-}
-.burger_close_btn {
-  font-size: 40px;
-  cursor: pointer;
-  color: #fff;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.burger_bg {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
-}
-.login_btn-burger {
-  border: 3px solid #ddab5f;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background: none;
-  font-family: Underdog;
-  font-weight: normal;
-  font-size: 12px;
-  width: 110px;
-  height: 40px;
-  padding: 13px 36px;
-  color: #000000;
-  display: flex;
-  align-items: center;
-  display: none;
-}
-.registr_btn-burger {
-  box-sizing: border-box;
-  border-radius: 10px;
-  background: #ddab5f;
-  font-family: Underdog;
-  font-weight: normal;
-  font-size: 12px;
-  width: 110px;
-  height: 40px;
-  padding: 13px 18px;
-  color: #000000;
-  display: flex;
-  align-items: center;
-  display: none;
-  margin-left: 10px;
-}
-.burger_buttons {
-  display: flex;
-  margin-bottom: 22px;
-}
-.login_btn-burger img {
-  margin-left: 6px;
-} */
