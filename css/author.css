@@ -402,18 +402,12 @@ button:hover {
   justify-content: flex-end;
 }
 
-.all__block-grey {
+.all__block-white, .all__block-grey {
   max-width: 950px;
   width: 100%;
   height: 100px;
-  background: #cecece;
-  border-radius: 20px;
-}
-.all__block-white {
-  max-width: 950px;
-  width: 100%;
-  height: 100px;
-  background: rgba(129, 129, 129, 0.2);
+  background: #f5e2cf;
+  border: 3px solid #000000;
   border-radius: 20px;
 }
 
@@ -705,6 +699,11 @@ button:hover {
 }
 
 @media screen and (max-width: 576px) {
+
+  .bg__author-img {
+    height: 600px;
+  }
+
   .author__text-title {
     font-size: 50px;
   }
@@ -828,6 +827,11 @@ button:hover {
 
   .author__text-title {
     font-size: 24px;
+  }
+
+  
+  .bg__author-img {
+    height: 400px;
   }
 
   .popular {

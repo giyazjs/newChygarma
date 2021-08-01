@@ -837,6 +837,7 @@ pre {
 
   .poem {
     margin-top: 20px;
+    padding: 0;
   }
 
   .poem__text {
@@ -872,6 +873,9 @@ pre {
   .comments {
     padding: 0 12px;
     margin-top: 60px;
+  }
+  .comments__title {
+    padding: 0;
   }
 
   .comments__title-h2 {

@@ -466,9 +466,6 @@ button:hover {
     padding: 0 20px;
   }
 
-  .bg__author-img {
-    height: 650px;
-  }
 
   .works__block-main {
     padding: 12px;
@@ -527,6 +524,10 @@ button:hover {
 
   .sign {
     display: none;
+  }
+
+  .bg__author-img {
+    height: 650px;
   }
 
   .burger__menu {
@@ -686,6 +687,10 @@ button:hover {
     padding: 0 20px;
   }
 
+  .bg__author-img {
+    height: 600px;
+  }
+
   .works__title,
   .all__title {
     font-size: 40px;
@@ -762,7 +767,7 @@ button:hover {
     padding: 0;
   }
   .bg__author-img {
-    height: 520px;
+    height: 400px;
   }
   .items {
     height: 70px;
@@ -929,6 +934,8 @@ button:hover {
 
   .footer {
     margin-top: 70px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 
   .footer__links {
